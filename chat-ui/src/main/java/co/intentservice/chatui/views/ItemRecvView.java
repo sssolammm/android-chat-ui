@@ -10,11 +10,6 @@ import android.widget.TextView;
 
 import co.intentservice.chatui.R;
 
-/**
- * View to display messages that have been received throught the chat-ui.
- *
- * Created by James Lendrem
- */
 
 public class ItemRecvView extends MessageView {
 
@@ -26,16 +21,10 @@ public class ItemRecvView extends MessageView {
      * @param message   The message that you want to be displayed.
      */
     public void setMessage(String message) {
-
         if (messageTextView == null) {
-
             messageTextView = (TextView) findViewById(R.id.message_text_view);
-
         }
-
         messageTextView.setText(message);
-
-
     }
 
     /**
@@ -43,15 +32,10 @@ public class ItemRecvView extends MessageView {
      * @param timestamp The timestamp that you want to be displayed.
      */
     public void setTimestamp(String timestamp) {
-
         if (timestampTextView == null) {
-
             timestampTextView = (TextView) findViewById(R.id.timestamp_text_view);
-
         }
-
         timestampTextView.setText(timestamp);
-
     }
 
     /**
@@ -59,15 +43,10 @@ public class ItemRecvView extends MessageView {
      * @param background The background that you want to be displayed.
      */
     public void setBackground(@ColorInt int background) {
-
         if (bubble == null) {
-
             this.bubble = (CardView) findViewById(R.id.bubble);
-
         }
-
         bubble.setCardBackgroundColor(background);
-
     }
 
     /**
@@ -75,13 +54,9 @@ public class ItemRecvView extends MessageView {
      * @param elevation The elevation that you want the view to be displayed at.
      */
     public void setElevation(float elevation) {
-
         if (bubble == null) {
-
             this.bubble = (CardView) findViewById(R.id.bubble);
-
         }
-
         bubble.setCardElevation(elevation);
 
     }
@@ -116,7 +91,6 @@ public class ItemRecvView extends MessageView {
      * @param context   The context that is used to inflate the view.
      */
     private void initializeView(Context context) {
-
         LayoutInflater inflater = (LayoutInflater)
                 context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.chat_item_rcv, this);
@@ -124,7 +98,5 @@ public class ItemRecvView extends MessageView {
         this.bubble = (CardView) findViewById(R.id.bubble);
         this.messageTextView = (TextView) findViewById(R.id.message_text_view);
         this.timestampTextView = (TextView) findViewById(R.id.timestamp_text_view);
-
     }
-
 }

@@ -13,8 +13,8 @@
         android:layout_above="@+id/input_frame"
         android:clipToPadding="false"
         android:divider="@android:color/transparent"
-        android:paddingBottom="32dp"
         android:paddingTop="8dp"
+        android:paddingBottom="32dp"
         android:stackFromBottom="true"
         android:transcriptMode="alwaysScroll" />
 
@@ -47,7 +47,7 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="2dp"
+        app:cardCornerRadius="15dp"
         app:cardElevation="1dp"
         app:contentPadding="2dp">
 
@@ -56,7 +56,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
-            android:background="@null"
             android:hint="@string/default_input_hint"
             android:inputType="text"
             android:maxLines="5"
@@ -66,6 +65,7 @@
             android:paddingRight="8dp"
             android:paddingTop="4dp"
             android:textColor="@color/black"
+            android:background="@drawable/round_corners"
             android:textColorHint="@color/main_color_gray"
             android:textSize="@dimen/default_input_text_size" />
 

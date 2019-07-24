@@ -52,14 +52,7 @@ public class ChatMessage {
 
 
     public String getFormattedTime() {
-
-        long oneDayInMillis = TimeUnit.DAYS.toMillis(1); // 24 * 60 * 60 * 1000;
-
-        long timeDifference = System.currentTimeMillis() - timestamp;
-
-        return timeDifference < oneDayInMillis
-                ? DateFormat.format("hh:mm a", timestamp).toString()
-                : DateFormat.format("dd MMM - hh:mm a", timestamp).toString();
+        return DateFormat.format("hh:mm", timestamp).toString();
     }
 
     public String getSender() {

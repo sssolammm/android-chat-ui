@@ -18,6 +18,7 @@
             chatview:bubbleElevation="elevated"
             chatview:bubbleBackgroundRcv="@color/blue"
             chatview:bubbleBackgroundSend="@color/white"
+            chatview:sendBtnBackgroundTint="@color/whatsapp_green"
             chatview:inputHint="@string/start_typing"/>
 
 </LinearLayout>

@@ -31,9 +31,6 @@ import co.intentservice.chatui.adapters.ChatViewListAdapter;
 import co.intentservice.chatui.views.ViewBuilder;
 import co.intentservice.chatui.views.ViewBuilderInterface;
 
-/**
- * Created by timi on 17/11/2015.
- */
 public class ChatView extends RelativeLayout {
 
     private static final int FLAT = 0;
